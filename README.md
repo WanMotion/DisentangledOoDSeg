@@ -3,7 +3,7 @@
 **This repository is an official implementation of the paper "Out-of-Distribution Semantic Segmentation with Disentangled and Calibrated Representation", which is under review.** 
 The full code will be released after review.
 
-## [\[Paper\]](https://github.com/WanMotion ) | [\[Arxiv\]](https://github.com/WanMotion )
+## [\[Paper\]](https://github.com/WanMotion ) | [\[Arxiv\]](https://github.com/WanMotion ) | [\[Supplementary\]](https://github.com/WanMotion)
 
 ## :fire: Highlight
 - **An extra OoD data free Method**: Different from other outlier exposure method, our method synthesizes OoD data from ID data instead of another dataset, and achieves competitve performance.
@@ -65,7 +65,7 @@ If you want to evaluate on the specific dataset, for example, Road Anomaly:
 python tools/test.py local_configs/OoDTest/road_anomaly.py path/to/your/checkpoint
 ```
 
-## Model Zoo
+## :cat: Model Zoo
 The weights file will be updated after review.
 
 Performance on Fishyscapes Validation Set and on Road Anomaly:
@@ -82,6 +82,16 @@ Performance on Fishyscapes Test Set:
 |-------------|-----------|-----------|
 | FS-L&F      | 59.37     | 6.62      |
 | FS-Static   | 96.31     | 0.63      |
+
+
+## Acknowledgement
+This project references the following open-source projects. 
+We thank their authors for making the source code publically available.
+- [SegFormer](https://github.com/NVlabs/SegFormer)
+- [MMSegmentation](https://github.com/open-mmlab/mmsegmentation)
+- [SETR](https://github.com/fudan-zvg/SETR)
+- [PSPNet](https://github.com/hszhao/PSPNet)
+- [DeepLabV3+](https://github.com/tensorflow/models/tree/master/research/deeplab)
 
 ## Citation
 To be updated.
