@@ -13,9 +13,10 @@ The full code will be released after review.
 
 ## :crown: Overview
 ![](figures/pipeline.png "An overview of the basic architecture of our proposed method.")
-Pixel-wise features extracted from the fixed segmentation network are first re-decoded by a decoder $$g$$ and then disentangled into semantic-related and semantic-unrelated features. 
+
+Pixel-wise features extracted from the fixed segmentation network are first re-decoded by a decoder `g` and then disentangled into semantic-related and semantic-unrelated features. 
 To guarantee the effectiveness of the disentanglement, semantic-related features are mixed with different semantic-unrelated features to reconstruct the original overlaps. 
-When inferencing, the OoD score map is calculated directly by the classifier $$h_p$$ without being reconstructed. 
+When inferencing, the OoD score map is calculated directly by the classifier `hp` without being reconstructed. 
 
 ## :art: Real-world Visualization on CODA
 ![](figures/coda.png "We visualize the predictions on a more complicated dataset named CODA")
