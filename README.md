@@ -9,7 +9,7 @@ The full code will be released after review.
 - **An extra OoD data free Method**: Different from other outlier exposure method, our method synthesizes OoD data from ID data instead of another dataset, and achieves competitve performance.
 - **A well-designed self-supervised training mechanism**: A disentangled representation learning via disentangling and reconstructing is introduced to guide the model to extract features of semantic-related and -unrelated to prevent overfitting to low diversity data.
 - **An innovative cognitive discrepancy loss**: The likelihood of pixels being OoD is estimated by the cognitive discrepancy of two classifiers that learn and do not learn OoD data, to relieve the data noise.
-- **Pixel-wise feature similarity calibration module**: The inaccurate feature similarity from teh frozen branch is calibrated by the similarity from the new branch, with a fused-attention block, to further boosting the performance.
+- **Pixel-wise feature similarity calibration module**: The inaccurate feature similarity from the frozen branch is calibrated by the similarity from the new branch, with a fused-attention block, to further boosting the performance.
 
 ## :crown: Overview
 ![](figures/pipeline.png "An overview of the basic architecture of our proposed method.")
@@ -30,7 +30,7 @@ From the visualization, our method performs well producing clear and precise pre
 
 ## Setup Environment
 For install and data preparation, please refer to the guidelines in [MMSegmentation v1.0.0](https://github.com/open-mmlab/mmsegmentation/tree/v1.0.0 "MMSegmentation").
-An example (works for us): `CUDA 10.2`, pytorch `1.12.1`, mmengine `0.7.4` and mmcv `2.0.1`. We also provide the `requirements.txt` for reference.
+An example (works for us): `CUDA 10.2`, pytorch `1.12.1`, mmengine `0.7.4` and mmcv `2.0.1`. We also provide the [requirements.txt](./requirements.txt) for reference.
 
 The directory tree of the data folder is as follows：
 
