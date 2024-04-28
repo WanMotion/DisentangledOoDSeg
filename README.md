@@ -13,9 +13,19 @@ The full code will be released after review.
 
 ## :crown: Overview
 ![](figures/pipeline.png "An overview of the basic architecture of our proposed method.")
+Pixel-wise features extracted from the fixed segmentation network are first re-decoded by a decoder $$g$$ and then disentangled into semantic-related and semantic-unrelated features. 
+To guarantee the effectiveness of the disentanglement, semantic-related features are mixed with different semantic-unrelated features to reconstruct the original overlaps. 
+When inferencing, the OoD score map is calculated directly by the classifier $$h_p$$ without being reconstructed. 
 
 ## :art: Real-world Visualization on CODA
 ![](figures/coda.png "We visualize the predictions on a more complicated dataset named CODA")
+To demonstrate the generalization capability of our method, we test our model trained on the Cityscapes dataset directly on the [CODA](https://coda-dataset.github.io/ "CODA") dataset. The visualization results reveal compelling performance in scenes with large domain shifts.
+
+
+## :art: Visualization on Fishyscapes and Road Anomaly compared with other methods
+![](figures/results.png "")
+From the visualization, our method performs well producing clear and precise predictions in scenes with both few and large domain shifts.
+
 
 ## Setup Environment
 For install and data preparation, please refer to the guidelines in [MMSegmentation v1.0.0](https://github.com/open-mmlab/mmsegmentation/tree/v1.0.0 "MMSegmentation").
