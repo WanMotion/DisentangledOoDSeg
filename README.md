@@ -1,7 +1,6 @@
 # Out-of-Distribution Semantic Segmentation with Disentangled and Calibrated Representation
 
 **This repository is an official implementation of the paper "Out-of-Distribution Semantic Segmentation with Disentangled and Calibrated Representation", which is under review.** 
-The full code will be released after review.
 
 ## [\[Paper\]](https://github.com/WanMotion ) | [\[Arxiv\]](https://github.com/WanMotion ) | [\[Supplementary\]](https://github.com/WanMotion)
 
@@ -76,8 +75,7 @@ If you want to evaluate on the specific dataset, for example, Road Anomaly:
 python tools/test.py local_configs/OoDTest/road_anomaly.py path/to/your/checkpoint
 ```
 
-## :cat: Model Zoo
-The weights file will be updated after review.
+## :cat: Performance
 
 Performance on Fishyscapes Validation Set and on Road Anomaly:
 
